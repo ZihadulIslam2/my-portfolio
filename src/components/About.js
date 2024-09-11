@@ -26,7 +26,13 @@ const About = () => {
             className="flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
           ></motion.div>
           {/* text */}
-          <div className="flex-1">
+          <motion.div
+            variants={fadeIn('left', 0.5)}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.3 }}
+            className="flex-1"
+          >
             <h2 className="h2 text-accent">About me.</h2>
             <h3 className="h3 mb-4">
               I'm A Freelancer Front-end Developer with over 5 year of
@@ -76,7 +82,7 @@ const About = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
