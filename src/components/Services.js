@@ -33,7 +33,13 @@ const Services = () => {
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row">
           {/* text and image */}
-          <motion.div className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0">
+          <motion.div
+            variants={fadeIn('right', 0.3)}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.3 }}
+            className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
+          >
             <h2 className="h2 text-accent mb-6 ">What I Do.</h2>
             <h3 className="h3 max-w-[455px] mb-16">
               I'm a freelancer Front-end and backe-end with one year of
@@ -42,7 +48,13 @@ const Services = () => {
             <button className="btn btn-sm">See my work</button>
           </motion.div>
           {/* services */}
-          <div className="flex-1">
+          <motion.div
+            variants={fadeIn('left', 0.5)}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.5 }}
+            className="flex-1"
+          >
             {/* services list */}
             {Servicesdata.map((service, index) => {
               // distracture service
@@ -74,7 +86,7 @@ const Services = () => {
                 </div>
               )
             })}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
