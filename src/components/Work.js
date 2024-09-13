@@ -13,7 +13,13 @@ const Work = () => {
     <section className="section" id="work">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-x-10">
-          <dir className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0">
+          <motion.dir
+            variants={fadeIn('right', 0.3)}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.3 }}
+            className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0"
+          >
             {/* text */}
             <div>
               <h2 className="h2 leading-tight text-accent">
@@ -48,8 +54,14 @@ const Work = () => {
                 <span className="text-3xl text-white">Project title</span>
               </div>
             </div>
-          </dir>
-          <dir className="flex-1 flex flex-col gap-y-10">
+          </motion.dir>
+          <motion.dir
+            variants={fadeIn('left', 0.3)}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.3 }}
+            className="flex-1 flex flex-col gap-y-10"
+          >
             {/* image 2 */}
             <div
               className="group relative overflow-hidden border-2 border-white/50 rounded-xl
@@ -93,7 +105,7 @@ const Work = () => {
                 <span className="text-3xl text-white">Project title</span>
               </div>
             </div>
-          </dir>
+          </motion.dir>
         </div>
       </div>
     </section>
