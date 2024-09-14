@@ -1,6 +1,6 @@
 import React from 'react'
 // images
-import Images from '../assets/avatar.svg'
+import Images from '../assets/linkedin profile 001 without bg.png'
 //icons
 import { FaGithub, FaYoutube, FaDribbble } from 'react-icons/fa'
 //type animation
