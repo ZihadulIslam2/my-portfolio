@@ -1,25 +1,27 @@
 import React from 'react'
-// images
 import Images from '../assets/linkedin profile 001 without bg.png'
-//icons
-import { FaGithub, FaYoutube, FaDribbble } from 'react-icons/fa'
-//type animation
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 import { TypeAnimation } from 'react-type-animation'
-//motion
 import { motion } from 'framer-motion'
-//vartains
 import { fadeIn } from '../variants'
+import { Link } from 'react-scroll'
 
 const Banner = () => {
+  const links = {
+    linkedin: 'https://www.linkedin.com/in/zihadulislam2/',
+    github: 'https://github.com/ZihadulIslam2',
+    email: 'zihadul708@gmail.com',
+  }
+
   return (
     <section
-      className="min-h-[85vh] lg:min-h-[78vh] flex items-center"
+      className="min-h-[85vh] lg:min-h-[78vh] flex items-center justify-center"
       id="home"
     >
-      <div className="container max-auto">
-        <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
+      <div className="container mx-auto">
+        <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:items-center lg:gap-x-12">
           {/* text */}
-          <div className="flex-1 text-center font-secondary lg:text-left">
+          <div className="flex-1 text-center font-secondary">
             <motion.h1
               variants={fadeIn('up', 0.3)}
               initial="hidden"
@@ -51,39 +53,41 @@ const Banner = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-8 max-w-lg mx-auto lg:mx-0"
+              className="mb-8 max-w-lg mx-auto"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-              incidunt eligendi reprehenderit expedita iusto
+              Passionate MERN stack developer creating efficient, scalable web
+              applications and enhancing user experiences every day.
             </motion.p>
             <motion.div
               variants={fadeIn('up', 0.6)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.7 }}
-              className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
+              className="flex max-w-max gap-x-6 items-center mb-12 mx-auto"
             >
-              <button className="btn btn-lg">Contact me</button>
-              <a href="#" className="text-gradient bln-link">
+              <button className="btn btn-lg">
+                <a href={`mailto:${links.email}`}>Contact me</a>
+              </button>
+              <Link to='work' to className="text-gradient bln-link">
                 My portfolio
-              </a>
+              </Link>
             </motion.div>
-            {/* seciat */}
+            {/* social */}
             <motion.div
               variants={fadeIn('up', 0.7)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.7 }}
-              className="flex text-[20] gap-x-6 max-w-max mx-auto lg:mx-0"
+              className="flex text-[20px] gap-x-6 max-w-max mx-auto"
             >
-              <a href="#">
-                <FaYoutube />
+              <a href={links.linkedin}>
+                <FaLinkedin />
               </a>
-              <a href="#">
+              <a href={links.github}>
                 <FaGithub />
               </a>
-              <a href="#">
-                <FaDribbble />
+              <a href={`mailto:${links.email}`}>
+                <FaEnvelope />
               </a>
             </motion.div>
           </div>
@@ -92,7 +96,7 @@ const Banner = () => {
             variants={fadeIn('down', 0.5)}
             initial="hidden"
             whileInView="show"
-            className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]"
+            className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px] mt-8 lg:mt-0"
           >
             <img src={Images} alt="" />
           </motion.div>
