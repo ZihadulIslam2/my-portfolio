@@ -142,9 +142,9 @@ const Work = () => {
                 My Latest <br /> work
               </h2>
               <p className="mx-w-sm mb-16">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloremque delectus velit iusto commodi cupiditate maxime. harum
-                eos id hic assumenda! Illo!
+                Explore my latest projects, showcasing innovative designs and
+                development, focused on delivering responsive, scalable web
+                applications and solutions.
               </p>
               <button className="btn btn-sm">View all projects</button>
             </div>
