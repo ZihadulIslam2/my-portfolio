@@ -35,7 +35,7 @@ const Services = () => {
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten"
+            className="flex-1  lg:bg-bottom bg-no-repeat mix-blend-lighten"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-accent mb-6">
               What I Do.
