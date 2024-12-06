@@ -37,21 +37,29 @@ const Work = () => {
               {/* overlay */}
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               {/* img */}
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={Img1}
-                alt=""
-              />
-              {/* pretitle */}
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">Ui ux designer</span>
-              </div>
-              {/* title */}
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project title</span>
-              </div>
+              <a
+                href="https://aero-mart.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={Img1}
+                  alt="Aero Mart Project"
+                />
+
+                {/* pretitle */}
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                  <span className="text-gradient">E-commerce Website</span>
+                </div>
+                {/* title */}
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                  <span className="text-3xl text-white">Aero Mart</span>
+                </div>
+              </a>
             </div>
           </motion.div>
+
           <motion.div
             variants={fadeIn('left', 0.3)}
             initial="hidden"
@@ -64,36 +72,48 @@ const Work = () => {
               {/* overlay */}
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               {/* img */}
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={Img2}
-                alt=""
-              />
+              <a
+                href="https://exampleproject2.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={Img2}
+                  alt="Project 2"
+                />
+              </a>
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">Ui ux designer</span>
+                <span className="text-gradient">Online Book Store</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project title</span>
+                <span className="text-3xl text-white">Book Store</span>
               </div>
             </div>
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               {/* overlay */}
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               {/* img */}
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={Img3}
-                alt=""
-              />
+              <a
+                href="https://exampleproject3.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={Img3}
+                  alt="Project 3"
+                />
+              </a>
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">Ui ux designer</span>
+                <span className="text-gradient">Online Food Store</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project title</span>
+                <span className="text-3xl text-white">Flavor Fusion</span>
               </div>
             </div>
           </motion.div>
